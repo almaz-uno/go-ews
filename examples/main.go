@@ -4,14 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	goews "github.com/beorereleverion/go-ews"
-	"github.com/beorereleverion/go-ews/elements"
+	goews "github.com/almaz-uno/go-ews"
+	"github.com/almaz-uno/go-ews/elements"
 	log "github.com/sirupsen/logrus"
 )
 
-var (
-	url, user, password string
-)
+var url, user, password string
 
 func main() {
 	setOSEnvs()
@@ -24,7 +22,6 @@ func main() {
 		MessageDisposition: getPTR("SendAndSaveCopy"),
 		Items: &elements.ItemsNonEmptyArrayOfAllItemsType{
 			Message: &elements.Message{
-
 				ItemClass: &elements.ItemClass{
 					TEXT: "IPM.Note",
 				},

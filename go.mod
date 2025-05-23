@@ -1,13 +1,13 @@
-module github.com/beorereleverion/go-ews
+module github.com/almaz-uno/go-ews
 
-go 1.19
+go 1.24
 
 require (
-	github.com/Azure/go-ntlmssp v0.0.0-20220621081337-cb9428e4ac1e
+	github.com/Azure/go-ntlmssp v0.0.0-20221128193559-754e69321358
 	github.com/sirupsen/logrus v1.9.0
 )
 
 require (
-	golang.org/x/crypto v0.2.0 // indirect
-	golang.org/x/sys v0.2.0 // indirect
+	golang.org/x/crypto v0.38.0 // indirect
+	golang.org/x/sys v0.33.0 // indirect
 )

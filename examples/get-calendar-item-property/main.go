@@ -4,20 +4,18 @@ import (
 	"fmt"
 	"os"
 
-	goews "github.com/beorereleverion/go-ews"
-	"github.com/beorereleverion/go-ews/elements"
-	"github.com/beorereleverion/go-ews/operations"
+	goews "github.com/almaz-uno/go-ews"
+	"github.com/almaz-uno/go-ews/elements"
+	"github.com/almaz-uno/go-ews/operations"
 	log "github.com/sirupsen/logrus"
 )
 
-var (
-	url, user, password, envName string
-)
+var url, user, password, envName string
 
 func main() {
 	setOSEnvs()
 	client := goews.NewClient(url, user, password, goews.Config{
-		//TODO true
+		// TODO true
 		Dump:    false,
 		NTLM:    true,
 		SkipTLS: false,
